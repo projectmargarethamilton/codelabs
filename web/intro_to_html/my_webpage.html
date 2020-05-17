@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <script>
+            function randomiseDogPicture() {
+                let imageNumber = Math.floor((Math.random() * 4) + 1);
+                document.getElementById("dogImg").src = `resources/dog_${imageNumber}.jpg`;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>Paragraph 1</p>
+            <p>
+                Paragraph 2, line 1<br>
+                Paragraph 2, line 2
+            </p>
+            <img 
+                id="dogImg"
+                src="resources/dog_1.jpg"
+            >
+        </div>
+        <button type="button" onclick="randomiseDogPicture()">Random Dog!</button>
+    </body>
+</html>

@@ -33,3 +33,32 @@ Now you should be able to see the webpage in raw HTML format in VS Code as well 
 
 ![](resources/raw_and_rendered.png "Ooh - pretty!")
 
+And now the real fun begins! Just to check everything is working, let's change where it says `HELLO WORLD` to say something else. In VS Code, replace the word `WORLD` with your name and save the file. Now select the web browser and reload the page (`Cmd + R` or `Ctrl + R`) and you should see that change you made to the HTML reflected in the rendered web page. 
+
+Great! We've edited some HTML. Yes, it's not the biggest change ever, but now there is no stopping us! 
+
+So. Remember we mentioned tags and attributes earlier? Well now is a good time to explain what they are. Tags are the fundamental parts of HTML that structure the document and tell the browser what to render on the page and how to arrange these components within the page. Some examples of tags include `<img>`, `<button>` and `<div>`. Tags will often also support attributes. These are properties that can be applied to a tag that can customise how the component will behave. Sticking with our image tag, for example, we can use the property `src` to tell the image component where the image that it should show lives. 
+
+```
+<img src="https://www.mypage.pmh/images/my_image.jpg"/>
+```
+
+Notice that slash before the closing bracket of the tag? All tags must be opened and closed so that the broweser knows where the tag starts and ends. Because in the example above, the image tag has no child tags or "inner HTML" we can use the shorthand for to signify open and close with just the one set of angular brackets. By contrast, you can see in our tutorial.html that our `html` tag is surrounding the text, as that text is a child of the html tag. In fact, the `html` tag is a special one, as it marks the root of the html document and so all components of the webpage will be nested within the `html` tag. Because of this, we need the separate opening and closing parts of the tag:
+
+```
+<html>
+    ...
+    Lots of child tags and text and other content
+    ...
+</html>
+```
+
+Note how we use the slash before the tag name to mark the closing of the tag.
+
+There are also tags that can be used to format text within a page. For example, the tag `<b>` around some text will mark that as **bold**. In fact, let's give that a quick try; around the text that says hello to you, change the HTML to get the browser to show it in bold text. 
+
+```
+<b>HELLO AWESOME PERSON!</b>
+```
+
+Remember to save and then reload the webpage in the browser to see your changes. Of course, you might not always want to apply the same formatting to a whole piece of text and the good news is that you aren't forced to, either! When you have the whole text showing in bold text, experiment with the positioning of the `<b>` tag so that the web page shows just your name in bold, while leaving "HELLO" in normal text. 

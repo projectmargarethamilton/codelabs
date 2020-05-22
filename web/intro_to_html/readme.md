@@ -107,9 +107,8 @@ Let's review what happened here. The text at the top inside no tags gets rendere
 
 Next we move onto the `p` tag, which marks a paragraph. This will add appropriate spacing to separate our paragraphs. It's a nice start, but still, if we had a really long load of text in that one paragraph, it would still just become a very long line of text, like we saw with the first batch of text. So how can we bring some order to this? That's where the `br` tag comes in. This tag marks a linebreak. You may have noticed it is a single tag and has neither the shorthand for closing or a specific closing tag. In some cases, like this one, where there is no need for open and closing parts of the tag, it is expected by the browser that the tag is a self-contained open-close and so we do not need to explicitly close it in code.
 
-```
-Before moving on, it is worth noting that there are lots of other ways of arranging our text, but they are beyond the scope of this lab.
-```
+*Before moving on, it is worth noting that there are lots of other ways of arranging our text, but they are beyond the scope of this lab.*
+
 
 Great! So we now have a page with a title and some random text. Let's add something a bit more imteresting, though. Well, everyone knows the Internet was made for cat pictures, but we prefer dogs, so let's add a picture of a dog to our website. :D This is one for you to try. Use the example from earlier in the tutorial to add an `img` tag to the web page and use `"resources/dog_1.jpg"` as the image's src location. Experiment with where you position the tag to see where it appears in the webpage.
 

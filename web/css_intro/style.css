@@ -1,0 +1,49 @@
+div {
+    background-color: lightblue;
+    max-width: 400px;
+}
+
+div.bordered_div {
+        border-color: magenta;
+        border-width: 3px;
+        border-style: solid;
+    }
+
+    p {
+            background-color: red;
+            text-align: left;
+            animation: mymove 5s infinite;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        /* @keyframes animate_colours {
+            0% {background-color: red;}
+            50% {background-color: blue;}
+            100% {background-color: red;}
+        } */
+
+    #important_info {
+        background-color: lime;
+        color: yellow;
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    @media only screen and (min-width: 600px) {
+        div {
+            max-width: 700px;
+        }
+        p {
+            background-color: orange;
+            text-align: center;
+        }
+        img {
+            width: 700px;       /* Max width that we want */
+            height: 56.25%;     /* Height as ratio of width */
+            object-fit: cover;   /* Cut off sides, preserve aspect ratio */
+        }   
+    } 

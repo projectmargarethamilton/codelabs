@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Tutorial</title>
+        <script>
+            function randomiseDogPicture() {
+                let imageNumber = Math.floor((Math.random() * 5) + 1);
+                document.getElementById("dogImg").src = `../resources/dog_${imageNumber}.jpg`;
+            }
+        </script>
+        <style>
+            div {
+                background-color: lightblue;
+                max-width: 400px;
+            }
+
+            div.bordered_div {
+                    border-color: magenta;
+                    border-width: 3px;
+                    border-style: solid;
+                }
+
+                p {
+                        background-color: red;
+                        text-align: left;
+                        animation: mymove 5s infinite;
+                    }
+
+                    img {
+                        width: 400px;
+                    }
+
+                    /* @keyframes mymove {
+                        0% {background-color: red;}
+                        50% {background-color: blue;}
+                        100% {background-color: red;}
+                    } */
+
+                #important_info {
+                    background-color: lime;
+                    color: yellow;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-shadow: 2px 2px 5px black;
+                }
+
+                @media only screen and (min-width: 600px) {
+                    div {
+                        max-width: 700px;
+                    }
+                    p {
+                        background-color: orange;
+                        text-align: center;
+                    }
+                    img {
+                        width: 700px;       /* Max width that we want */
+                        height: 56.25%;     /* Height as ratio of width */
+                        object-fit: cover;   /* Cut off sides, preserve aspect ratio */
+                    }   
+                } 
+            </style>
+    </head>
+    <body>
+        <div class="bordered_div">
+            <h2 style="text-align:center">Dogs and more dogs!</h2>
+            <p>
+                This is a page dedicated to dogs. Dogs are the best pets 
+                and even though cats are funny on the internet, that's where 
+                they belong; online! Three cheers for how amazing dog are!
+            </p>
+            <p>
+                Press the button below to a random dog picture. Because why not?!?!
+            </p>
+            <div>
+                <button type="button" onclick="randomiseDogPicture()">Random Dog!</button>
+            </div>
+            <img 
+                id="dogImg"
+                src="../resources/dog_1.jpg"
+            >
+        </div>
+        <div class="bordered_div">
+            <p id="important_info">And down here is some really important information that we want onscreen but we don't want above the image.</p>
+        </div>
+    </body>
+</html>

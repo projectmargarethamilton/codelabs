@@ -16,6 +16,8 @@ div.bordered_div {
 
         img {
             width: 400px;
+            height: 56.25%;
+            object-fit: cover;
         }
 
          /* @keyframes animate_colours {

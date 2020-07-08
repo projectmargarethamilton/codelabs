@@ -8,15 +8,48 @@
                 document.getElementById("dogImg").src = `../resources/dog_${imageNumber}.jpg`;
             }
         </script>
+        <style>
+            div {
+                    background-color: lightblue;
+                    max-width: 400px;
+                }
+
+                p {
+                        background-color: red;
+                        text-align: left;
+                    }
+
+                    img {
+                        width: 400px;
+                    }
+
+                @media only screen and (min-width: 600px) {
+                    div {
+                        max-width: 700px;
+                    }
+                    p {
+                        background-color: orange;
+                        text-align: center;
+                    }
+                    img {
+                        width: 700px;
+                    }   
+                } 
+            </style>
     </head>
     <body>
         <div>
-            <p>Paragraph 1</p>
+            <h2 style="text-align:center">Dogs and more dogs!</h2>
             <p>
-                Paragraph 2, line 1<br>
-                Paragraph 2, line 2
+                This is a page dedicated to dogs. Dogs are the best pets<br> 
+                and even though cats are funny on the internet, that's where 
+                they belong; online! Three cheers for how amazing dog are!
             </p>
-            <div><button type="button" onclick="randomiseDogPicture()">Random Dog!</button></div>
+            <p>
+                Press the button below to a random dog picture. Because why not?!?!
+            </p>
+            <div>
+                <button type="button" onclick="randomiseDogPicture()">Random Dog!</button></div>
             <img 
                 id="dogImg"
                 src="../resources/dog_1.jpg"
